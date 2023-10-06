@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styled Form</title>
+    <style>
+        /* Custom color palette */
+        :root {
+            --form-bg-color: #c2e6d5; /* Form background color */
+            --input-bg-color: #b7f1be; /* Input background color */
+            --submit-bg-color: #007BFF; /* Submit button background color */
+            --opacity-bg-color: rgba(255, 0, 0, 0.5); /* Red with 50% opacity */
+        }
+
+        /* Style for the form container */
+        .form-container {
+            width: 400px;
+            background-color: var(--form-bg-color); /* Use the form background color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+     
+
+        /* Style for text input fields */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+
+            background-color: var(--input-bg-color); /* Use the input background color */
+        }
+
+      
+
+        /* Style for submit button */
+        input[type="submit"] {
+            background-color: var(--submit-bg-color); /* Use the submit button background color */
+            color: #fff;
+           
+        }
+
+        /* Apply opacity to the entire section */
+        .opacity-section {
+            background-color: var(--opacity-bg-color); /* Use the opacity background color */
+           
+            opacity: 0.7; /* 70% opacity */
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Styled Form</h1>
+        <form >
+            <!-- Text Input -->
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+         
+
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> <br><br>
+
+            <!-- Password Input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required> <br><br>
+
+            <!-- Select Dropdown -->
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+            </select> <br><br>
+
+            <!-- Radio Buttons -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label> <br><br>
+
+            <!-- Checkboxes -->
+            <label>Hobbies:</label>
+            <input type="checkbox" id="hobby1" name="hobbies[]" value="reading">
+            <label for="hobby1">Reading</label>
+            <input type="checkbox" id="hobby2" name="hobbies[]" value="traveling">
+            <label for="hobby2">Traveling</label>
+            <input type="checkbox" id="hobby3" name="hobbies[]" value="cooking">
+            <label for="hobby3">Cooking</label> <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Apply opacity to this section -->
+    <div class="opacity-section">
+        <h2>Opacity Section</h2>
+        <p>This section has a background with 70% opacity.</p>
+    </div>
+</body>
+</html>

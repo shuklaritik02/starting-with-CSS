@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple CSS Example</title>
+
+    <!-- Internal CSS (Within the HTML File) -->
+    <style>
+        /* Comments in CSS are written like this */
+        .box1 {
+            color: black;
+            background-color: lightblue;
+            
+        }
+
+        .happy {
+            background-color: bisque;
+            color: aqua;
+        }
+    </style>
+
+    <!-- External CSS (Linked from an external file) -->
+    <link rel="stylesheet" href="style 1.css">
+
+</head>
+<body>
+    <h1>Simple CSS Example</h1>
+
+    <!-- Inline CSS (Applied directly to an element) -->
+    <div class="box" style="color: red; background-color: aqua;">Inline CSS</div> <br>
+
+    <!-- Internal CSS (Applied to a class) -->
+    <div class="box1">Internal CSS</div> <br>
+
+    <!-- External CSS (Applied to a class) -->
+    <div class="box2">External CSS</div> <br>
+
+    <!-- happens when target the same element with inline, internal, and extrenal -->
+
+    <div class="happy" style="color: red; background-color: burlywood;"> check inline external internal which one is apply   </div>
+
+    <!-- 1.Inline CSS (highest specificity)
+    2.Internal CSS
+    3.External CSS (lowest specificity) -->
+
+
+    <!-- Comments in HTML -->
+    <!-- This is a comment in the HTML code -->
+</body>
+</html>
